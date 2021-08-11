@@ -1,0 +1,33 @@
+{
+  "name": "fiver-clone",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+    "engines" : { 
+      "node" : "10.23.0" 
+    },
+
+  "author": "M.Zain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cloudinary": "^1.25.1",
+    "config": "^3.3.3",
+    "cors": "^2.8.5",
+    "express": "4.17.1",
+    "express-validator": "^6.9.2",
+    "express-validators": "^1.0.4",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "5.11.11",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.0",
+    "path": "^0.12.7",
+    "uuid": "^8.3.2"
+  }
+}
