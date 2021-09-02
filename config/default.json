@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb://localhost:27017/fiverr-clone",
+    "mongoURI": "mongodb+srv://zaini:235896@cluster0.q48lj.mongodb.net/fiverr-clone?retryWrites=true&w=majority",
     "mongoCloud":"mongodb+srv://zain:235896Z@in@cluster0.dzmih.mongodb.net/my-karigar?retryWrites=true&w=majority",
     "jwtSecret": "mySecretToken"
     }

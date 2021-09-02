@@ -15,7 +15,10 @@ const Rating = require("../models/Ratings");
 
 router.use(cors());
 
-const storageEngine = multer.diskStorage({
+
+  
+
+  const storageEngine = multer.diskStorage({
     destination: './public/uploads/categories/',
     filename: function (req, file, fn) {
       fn(null, req.body.categoryName + path.extname(file.originalname)); //+'-'+file.fieldname
@@ -31,7 +34,7 @@ const storageEngine = multer.diskStorage({
     }
   }).single('avatar');
   var validateFile = function (file, cb) {
-    allowedFileTypes = /jpeg|jpg|png|gif/;
+   const allowedFileTypes = /jpeg|jpg|png|gif/;
     const extension = allowedFileTypes.test(path.extname(file.originalname).toLowerCase());
     const mimeType = allowedFileTypes.test(file.mimetype);
     if (extension && mimeType) {
@@ -41,11 +44,10 @@ const storageEngine = multer.diskStorage({
     }
   }
   cloudinary.config({
-    cloud_name: "mykarigar041",
-    api_key: "233295414959746",
-    api_secret: "PcnRph4xxsW7J0Z9G6AHNETK3ms",
+    cloud_name: "parking-app041",
+    api_key: "522187368244197",
+    api_secret: "_kgRpudcOL1CAy5McIDv-KVLNlk",
   });
-  
 // @route   GET api/profiles/test
 // @desc    Tests users route
 // @access  Public
@@ -313,7 +315,7 @@ router.post("/uploadPhoto", auth, async (req, res) => {
         try {
 
           var image = null;
-          const timestamp = new Date().getTime()
+       
         await cloudinary.uploader.upload( 
           req.file.path,
           {

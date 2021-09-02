@@ -20,6 +20,15 @@ const ServicesSchema = new Schema({
     default: null,
    
   },
+  avatar:{
+    type:String,
+    default:null
+  },
+  public_id:{
+    type:String,
+    default:null
+
+  },
   date: {
     type: Date,
     default: Date.now
